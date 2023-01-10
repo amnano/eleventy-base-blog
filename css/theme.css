@@ -1,0 +1,295 @@
+/*  OVERWRITING  */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    font-style: Inter;
+}
+
+.sub a {
+    text-decoration: none;
+}
+
+/* __________ LOGO + NAME + JOB __________ */
+
+
+/* Layout */
+.main {
+    /*margin: 100px 60px 0px 160px;*/
+    height: 160px;
+
+}
+
+@media (max-width: 800px) {
+    .main {
+        margin: 10px 6px 6px 16px;
+        height: 160px;
+    }
+}
+
+/* Icon Placeholder */
+.icon {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+/* Layout */
+.me {
+
+    margin-left: 60px;
+    font-size: 18px;
+    padding: 10px;
+
+}
+
+/* Job */
+.bio {
+
+    font-style: normal;
+    color: #868686;
+    font-weight: 300;
+}
+
+/* Name */
+
+.name {
+    font-style: medium;
+    font-weight: 400;
+}
+
+
+/* __________ PRESENTATION __________ */
+
+
+/* Layout */
+
+.main2 {
+   /*  margin: 0px 60px 0px 160px;*/
+   margin-top: -1rem;
+}
+
+@media (max-width: 800px) {
+    .main2 {
+        margin: 0px 0px 0px 0px;
+    }
+}
+
+/* What I do */
+.descwrap {
+    display: flex;
+    margin-top: -30px;
+/*  margin-left: 70px; */
+}
+
+/* What I do Desktop */
+@media (max-width: 800px) {
+    .descwrap {
+        display: block;
+        margin-left: 0px;
+        margin-top: 0px;
+        font-size: 20px;
+        padding-inline: 26px;
+        margin-right: 10px;
+        /*justify-content: center;*/
+    }
+
+    .suitedesc {
+        margin-left: 0px;
+        margin-top: 6px;
+    }
+}
+
+.desc {
+    font-size: 18px;
+    font-weight: 400;
+    /*    display: flex;*/
+    line-height: 1em;
+}
+
+/* Animated text */
+.suitedesc {
+    margin-left: 8px;
+    font-size: 18px;
+    font-weight: 400;
+    display: flex;
+    line-height: 1em;
+}
+
+@media (max-width: 800px) {
+    .desc {
+        margin-left: 0px;
+        margin-top: 0px;
+        font-size: 20px;
+        display: flex;
+        line-height: normal;
+        /*justify-content: center;*/
+    }
+
+    .suitedesc {
+        margin-left: 0px;
+        margin-top: 4px;
+        font-size: 20px;
+    }
+}
+
+
+/* __________ TEXT ANIMATION __________ */
+
+
+
+#counter {
+    height: 1em;
+    overflow: hidden;
+}
+
+.digits {
+    float: left;
+    /*  list-style-type: none; */
+    font-size: 1em;
+    /*line-height: 1em;*/
+}
+
+.digits-first {
+    margin-top: -4em;
+    /* number 4! */
+}
+
+.digits-second {
+    margin-top: 0em;
+    /* number 0! */
+}
+
+.digits-third {
+    margin-top: 0em;
+    /* number 4! */
+}
+
+.digits {
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    /*   animation-delay: 2.2s;*/
+    animation-fill-mode: forwards;
+    padding-inline: 6px;
+    /*    animation-iteration-count: 5;*/
+}
+
+.luckie {
+    animation-name: luckie;
+}
+
+/* Animations */
+@keyframes luckie {
+    100% {
+        margin-top: -6em;
+    }
+}
+
+.infos {
+display: flex;
+gap:2rem;
+margin-top: 15%;
+flex-direction: column;
+margin-top: 160px;
+}
+
+@media (max-width: 900px) {
+    .infos {
+        flex-direction: column
+    }
+}
+
+.box1 {
+width: 100%;
+min-width: 300px;
+}
+
+
+
+.box1-text {
+    background-color: bisque;
+    }
+
+.sub{
+    margin-top: 56px;
+    display: flex;
+ /*   align-items: center;*/
+    gap: 1vw;
+}
+
+@media (max-width: 900px) {
+    .sub {
+        flex-direction: column;
+        align-items:flex-start;
+        padding-inline: 26px;
+        gap:25px;
+    }
+}
+
+.input,
+.iconso {
+    display: inline-block;
+    padding: 8px 15px 6px 15px;
+    font-size: 14px;
+    border-radius: 0;
+    -webkit-appearance: none;
+}
+
+.iconso a {
+
+    text-decoration-skip-ink: none;
+    text-decoration: none;
+    border-bottom: none;
+}
+
+.input{
+    box-sizing: border-box;
+    border: none;
+    background: #0000000D;
+color:#5e5e5e;
+border-radius: 30px;
+/*-webkit-appearance: none;
+margin: 0;
+padding: 10px;
+line-height: 16px;
+transition: all 0.15s ease;*/
+cursor: pointer;
+}
+
+input:focus {
+    outline:none;
+}
+
+.icons{
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+/*gap: 18px;
+padding: 0px;
+
+width: 151.86px;
+height: 100%;
+flex: 1;*/
+}
+
+.iconso{
+/*    background: #0000000D;*/
+    color:#000000;
+    transition: all 0.15s ease;
+    border-radius: 30px;
+    /*
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    border: none;
+    margin: 0;
+
+    padding: 10px;
+    font-size: 14px;
+    line-height: 16px;
+    transition: all 0.15s ease;*/
+    }
+
+    #hid{
+
+ }
